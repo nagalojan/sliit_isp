@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-# TugaRecon, tribute to Portuguese explorers reminding glorious past of this country
-# Bug Bounty Recon, search for subdomains and save in to a file
-# Coded By skynet0x01
+
 ################################################################################
 # Import internal functions
 from utils.tuga_colors import G, Y, B, R, W
@@ -16,7 +14,7 @@ def banner():
               "           /_______  /  /  /       /  /   |  ________  |   |  |      |  |  /  /        \  \ |  | \  \/  / |  |    \n"
               "          _______/  /  /  /______ /  /    |  |______/  /   |  |_____/   /  \  \________/  / |  |  \____/  |  |             \n"
               "         /_________/   \____________/     |  |_______ /    |__________ /    \___________ /  |__|          |__|  # Coded By IT20077792  #  \n" + W)
-    print(Y + "SUB DOM, . 2023-ISP                                                                                                                    \n" + W)
+    print(Y + "SUB DOM, . 2023-ISP                             Coded by Nagaloajn.K                                                                                        \n" + W)
 
-    print(Y + "TugaRecon, tribute to Portuguese explorers reminding glorious past of this country. 2020-2022\n" + W)
+    print(Y + "SUBDOM, tribute to Portuguese explorers reminding glorious past of this country. 2020-2022\n" + W)
 ################################################################################
