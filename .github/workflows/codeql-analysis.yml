@@ -1,24 +1,24 @@
-# For most projects, this workflow file will not need changing; you simply need
+# Actions workflow configuration file written in YAML
 # to commit it to your repository.
-#
-# You may wish to alter this file to override the set of languages analyzed,
-# or to provide custom queries or build logic.
-#
+
 # ******** NOTE ********
 # We have attempted to detect the languages in your repository. Please check
 # the `language` matrix defined below to confirm you have the correct set of
 # supported CodeQL languages.
 #
-name: "CodeQL"
+name: "CodeQL"  # workflow is named "CodeQL"
 
 on:
   push:
-    branches: [ master ]
+    branches: [ master ]  # is a push event to the master branch
   pull_request:
     # The branches below must be a subset of the branches above
-    branches: [ master ]
-  schedule:
+    branches: [ master ]   # is a pull request opened against the master branch.
+  schedule:                # allows for code analysis to be performed when pull requests are created or updated.
     - cron: '29 2 * * 2'
+      # on: schedule: It is scheduled to run every Tuesday at 2:29 AM UTC.
+      #The cron expression 29 2 * * 2 specifies the schedule.
+      # It means the workflow will run at 2:29 AM every Tuesday (the 2 represents Tuesday, and 29 is the minute).
 
 jobs:
   analyze:
@@ -37,18 +37,15 @@ jobs:
         # Learn more about CodeQL language support at https://git.io/codeql-language-support
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v3
+    - name: Checkout repository # indicating that it checks out the repository.
+      uses: actions/checkout@v3  #action to clone the repository into the runner's workspace
 
     # Initializes the CodeQL tools for scanning.
     - name: Initialize CodeQL
-      uses: github/codeql-action/init@v2
+      uses: github/codeql-action/init@v2 #GitHub repository and path to the CodeQL Initialization action.version 2
       with:
-        languages: ${{ matrix.language }}
-        # If you wish to specify custom queries, you can do so here or in a config file.
-        # By default, queries listed here will override any specified in a config file.
-        # Prefix the list here with "+" to use these queries and those in the config file.
-        # queries: ./path/to/local/query, your-org/your-repo/queries@main
+        languages: ${{ matrix.language }} #dynamically selects the language defined in the matrix in the previous section
+        #CodeQL is GitHub's security analysis tools.it is a static analysis tool that can help identify and fix security vulnerabilities in code.
 
     # Autobuild attempts to build any compiled languages  (C/C++, C#, or Java).
     # If this step fails, then you should remove it and run the build manually (see below)
