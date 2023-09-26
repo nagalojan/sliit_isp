@@ -1,7 +1,4 @@
-# TugaRecon - threatcrowd, write by skynet0x01
-# TugaRecon, tribute to Portuguese explorers reminding glorious past of this country
-# Bug Bounty Recon, search for subdomains and save in to a file
-# Coded By skynet0x01
+
 # import modules
 ################################################################################
 import time
@@ -32,6 +29,7 @@ class Threatcrowd:
             pass
 ################################################################################
     def engine_url(self):
+        # request to the "threatcrowd.org" API to retrieve a domain report for a given target domain
         try:
             response = requests.get(f'https://threatcrowd.org/searchApi/v2/domain/report/?domain={self.target}').text
             return response

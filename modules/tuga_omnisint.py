@@ -1,7 +1,6 @@
-# TugaRecon - Omnisint module, write by skynet0x01
-# TugaRecon, tribute to Portuguese explorers reminding glorious past of this country
-# Bug Bounty Recon, search for subdomains and save in to a file
-# Coded By skynet0x01
+#  write by IT20077792
+# search for subdomains and save in to a file
+# Coded for SLIIT-ISP project
 # import modules
 import time
 import requests
@@ -30,6 +29,8 @@ class Omnisint:
             pass
 ################################################################################
     def engine_url(self):
+        # sends an HTTP GET request to the "sonar.omnisint.io" API
+        # to retrieve subdomains associated with a given target domain (self.target)
         try:
             response = requests.get(f"https://sonar.omnisint.io/subdomains/{self.target}").json()
             return response

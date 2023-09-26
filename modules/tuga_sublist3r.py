@@ -1,7 +1,4 @@
-# TugaRecon - crt module, write by skynet0x01
-# TugaRecon, tribute to Portuguese explorers reminding glorious past of this country
-# Bug Bounty Recon, search for subdomains and save in to a file
-# Coded By skynet0x01
+
 # import modules
 import time
 import requests
@@ -32,6 +29,8 @@ class Sublist3r:
             pass
 ################################################################################
     def engine_url(self):
+        # request to the "api.sublist3r.com" API
+        # to perform a search for subdomains associated with a given target domain
         try:
             response = requests.get(f'https://api.sublist3r.com/search.php?domain={self.target}').text
             return response

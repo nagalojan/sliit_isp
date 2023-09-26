@@ -1,7 +1,6 @@
-# TugaRecon - HackerTarget module, write by skynet0x01
-# TugaRecon, tribute to Portuguese explorers reminding glorious past of this country
-# Bug Bounty Recon, search for subdomains and save in to a file
-# Coded By skynet0x01
+# HackerTarget module, write by IT20077792
+# search for subdomains and save in to a file
+# Coded for sliit- ISP project
 # import modules
 ################################################################################
 import time
@@ -32,6 +31,8 @@ class Hackertarget:
             pass
 ################################################################################
     def engine_url(self):
+        # sends an HTTP GET request to the HackerTarget API
+        # to perform a host search for a given target domain (self.target)
         try:
             response = requests.get(f"https://api.hackertarget.com/hostsearch/?q={self.target}").text
             return response

@@ -1,7 +1,4 @@
-# TugaRecon - crt module, write by skynet0x01
-# TugaRecon, tribute to Portuguese explorers reminding glorious past of this country
-# Bug Bounty Recon, search for subdomains and save in to a file
-# Coded By skynet0x01
+
 # import modules
 import time
 import requests
@@ -30,6 +27,8 @@ class Threatminer:
             pass
 ################################################################################
     def engine_url(self):
+        # request to the "api.threatminer.org" API
+        # to retrieve domain information for a given target domain
         try:
             response = requests.get(f'https://api.threatminer.org/v2/domain.php?q={self.target}&rt=5').text
             return response

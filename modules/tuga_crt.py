@@ -1,7 +1,6 @@
-# TugaRecon - crt module, write by skynet0x01
-# TugaRecon, tribute to Portuguese explorers reminding glorious past of this country
-# Bug Bounty Recon, search for subdomains and save in to a file
-# Coded By skynet0x01
+# crt module, write by IT20077792
+#  search for subdomains and save in to a file
+# Coded for ISP project
 # import modules
 import time
 import requests
@@ -32,9 +31,10 @@ class CRT:
             pass
 ################################################################################
     def engine_url(self):
+        #  uses the "requests" library to send an HTTP GET request to a URL formed with a target variable
         try:
             response = requests.get(f'https://crt.sh/?q={self.target}&output=json').text
-            return response
+            return response   # retrieves the response text
         except requests.ConnectionError:
             response = 1
             return response

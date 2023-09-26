@@ -1,7 +1,7 @@
-# TugaRecon - certspotter, write by skynet0x01
-# TugaRecon, tribute to Portuguese explorers reminding glorious past of this country
+# TugaRecon - certspotter, write by IT20077792
 # Bug Bounty Recon, search for subdomains and save in to a file
-# Coded By skynet0x01
+# Coded for sliit-isp project
+# This class is used for performing information gathering related to SSL/TLS certificates for a specified target domain.
 
 # import modules
 import time
@@ -31,6 +31,8 @@ class Certspotter:
             pass
 ################################################################################
     def engine_url(self):
+        # sends an HTTP GET request to the Cert Spotter API
+        # to retrieve SSL certificate information for a given domain (self.target) and its subdomains
         try:
             response = requests.get(f'https://api.certspotter.com/v1/issuances?domain={self.target}&include_subdomains=true&expand=dns_names').text
         except (requests.ConnectionError, requests.Timeout) as exception:
