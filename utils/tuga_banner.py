@@ -4,7 +4,7 @@
 # Import internal functions
 from utils.tuga_colors import G, Y, B, R, W
 ################################################################################
-# Banner, Tuga or portuguese, is the same ;)
+# Banner,
 def banner():
 
 
