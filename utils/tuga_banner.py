@@ -16,5 +16,5 @@ def banner():
               "         /_________/   \____________/     |  |_______ /    |__________ /    \___________ /  |__|          |__|  # Coded By IT20077792  #  \n" + W)
     print(Y + "SUB DOM, . 2023-ISP                             Coded by Nagaloajn.K                                                                                        \n" + W)
 
-    print(Y + "SUBDOM, tribute to Portuguese explorers reminding glorious past of this country. 2020-2022\n" + W)
+    print(Y + "SUBDOM, THis project make for SLIIT ISP module. 2023\n" + W)
 ################################################################################
