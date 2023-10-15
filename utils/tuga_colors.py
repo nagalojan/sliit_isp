@@ -1,7 +1,7 @@
-# TugaRecon - funcions, write by skynet0x01
-# TugaRecon, tribute to Portuguese explorers reminding glorious past of this country
-# Bug Bounty Recon, search for subdomains and save in to a file
-# Coded By skynet0x01
+# 
+# 
+# Bug Bounty , search for subdomains and save in to a file
+# Coded By IT20077792
 ################################################################################
 # Colors
 global G, Y, B, R, W
