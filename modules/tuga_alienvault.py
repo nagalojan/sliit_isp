@@ -1,5 +1,5 @@
 # subdom - crt module, write by IT20077792
-# Bug Bounty Recon, search for subdomains and save in to a file
+# Bug Bounty , search for subdomains and save in to a file
 # Coded for SLIIT-ISP project
 # import modules
 import time
