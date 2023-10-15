@@ -1,3 +1,6 @@
+# # SUBDOM - create for SLIIT ISP module
+# Coded By IT20077792
+
 #### getTerminalSize()
 
 __all__ = ['getTerminalSize']
