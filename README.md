@@ -1,19 +1,23 @@
-# TugaRecon
-<a href="https://github.com/skynet0x01/tugarecon/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/skynet0x01/tugarecon?style=for-the-badge"></a>
-<a href="https://github.com/skynet0x01/tugarecon/network"><img alt="GitHub forks" src="https://img.shields.io/github/forks/skynet0x01/tugarecon?style=for-the-badge"></a>
-<a href="https://github.com/skynet0x01/tugarecon/blob/master/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/skynet0x01/tugarecon?style=for-the-badge"></a>
+# SUBDOM
 
-                               ______                  ____
-                              /_  __/_  ______ _____ _/ __ \___  _________  ____
-                               / / / / / / __ `/ __ `/ /_/ / _ \/ ___/ __ \/ __ \
-                              / / / /_/ / /_/ / /_/ / _, _/  __/ /__/ /_/ / / / /
-                             /_/  \__,_/\__, /\__,_/_/ |_|\___/\___/\____/_/ /_/
-                                       /____/    # Coded By skynet0x01 #
 
-Tugarecon is a python tool designed to enumerate subdomains using modules. It helps penetration testers and bug hunters collect and gather subdomains for the domain they are targeting.  Bruteforce was integrated was a module to increase the possibility of finding more subdomains using bruteforce with an improved wordlist.
-TugaRecon, tribute to Portuguese explorers reminding glorious past of this country.
+                          
 
-During the 15th and 16th centuries, Portuguese explorers were at the forefront of European overseas exploration, which led them to reach India, establish multiple trading posts in Asia and Africa, and settle what would become Brazil, creating one of the most powerful empires.
+
+
+              "              _________                    ___________      ___________       __________     _____      _____\n"
+              "             /  ______/   ___        ___  |  _______  \    |  ______   \     /  ______  \   |  _  \    /  _  | \n"
+              "            /  /______   /  /       /  /  |  |______\  \   |  |      \  \   /  /      \  \  |  |\  \  /  /|  |         \n"
+              "           /_______  /  /  /       /  /   |  ________  |   |  |      |  |  /  /        \  \ |  | \  \/  / |  |    \n"
+              "          _______/  /  /  /______ /  /    |  |______/  /   |  |_____/   /  \  \________/  / |  |  \____/  |  |             \n"
+              "         /_________/   \____________/     |  |_______ /    |__________ /    \___________ /  |__|          |__|  # Coded By IT20077792  
+      "SUB DOM, . 2023-ISP                             Coded by Nagaloajn.K      IT20077792                                                                                 
+                                 "SUBDOM, THis project make for SLIIT ISP module. 2023\n" 
+################################################################################
+subdom is a python tool designed to enumerate subdomains using modules. It helps penetration testers and bug hunters collect and gather subdomains for the domain they are targeting.  Bruteforce was integrated was a module to increase the possibility of finding more subdomains using bruteforce with an improved wordlist.
+
+
+
 
 skynet0x01
 
@@ -25,25 +29,20 @@ And much more... :)
 
 # Screenshots
 
-![tugarecon_bughunters](https://user-images.githubusercontent.com/39160972/162957618-02e38cff-942a-4ea5-983b-d3c21eca1f9b.png)
-
-![tugarecon1](https://user-images.githubusercontent.com/39160972/162959038-5fbfc6df-8f18-4c91-b037-0097e6338d9e.png)
-
-![Screenshot from 2020-01-26 20-59-16](https://user-images.githubusercontent.com/39160972/73141832-4d97b180-4080-11ea-9adc-a83667ea9687.png)
 
 ## Installation
 
-- git clone https://github.com/skynet0x01/tugarecon.git
+- git clone 
 - pip install -r requirements.txt
 
 ## Usage
 
-        python3 tugarecon.py -d google.com
-        python3 tugarecon.py -d google.com --savemap
-        python3 tugarecon.py -d google.com --bruteforce
-        python3 tugarecon.py -d google.com --bruteforce --full
-        python3 tugarecon.py -d google.com -b --full
-        python3 tugarecon.py -r
+        python3 subdom.py -d google.com
+        python3 subdom.py -d google.com --savemap
+        python3 subdom.py -d google.com --bruteforce
+        python3 subdom.py -d google.com --bruteforce --full
+        python3 subdom.py -d google.com -b --full
+        python3 subdom.py -r
 
 ## Modules
 
@@ -87,4 +86,3 @@ Donations are welcome. This will help improved features, frequent updates and be
   - ONE: one1q2y2hntw32yakh6fxk5ls7dkvswfuhcm70ymvh
   - SCRT: secret1fc88f5asq3lmkrhst2shsa7ew5fxt7qapjsda7
 
-   ![tugarecon](https://user-images.githubusercontent.com/39160972/75924110-45d8e300-5e5e-11ea-8832-55c08ecc2902.jpg)
