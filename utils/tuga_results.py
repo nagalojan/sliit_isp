@@ -1,7 +1,8 @@
 #!/usr/bin/python3
-# TugaRecon, tribute to Portuguese explorers reminding glorious past of this country
+
 # Bug Bounty Recon, search for subdomains and save in to a file
-# Coded By skynet0x01
+# # SUBDOM - create for SLIIT ISP module
+# Coded By IT20077792
 ################################################################################
 import os
 from utils.tuga_colors import G, Y, B, R, W
