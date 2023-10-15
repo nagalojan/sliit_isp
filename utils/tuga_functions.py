@@ -1,7 +1,7 @@
-# TugaRecon - funcions, write by skynet0x01
-# TugaRecon, tribute to Portuguese explorers reminding glorious past of this country
+# SUBDOM - cattect for SLIIT ISP module
+# Coded By IT20077792
 # Bug Bounty Recon, search for subdomains and save in to a file
-# Coded By skynet0x01
+# 
 import sys
 import urllib.request
 import webbrowser
