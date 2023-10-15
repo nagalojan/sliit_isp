@@ -1,7 +1,7 @@
-# TugaRecon - DNS, write by skynet0x01
-# TugaRecon, tribute to Portuguese explorers reminding glorious past of this country
-# Bug Bounty Recon, search for subdomains and save in to a file
-# Coded By skynet0x01
+# SUBDOM - cattect for SLIIT ISP module
+# Coded By IT20077792
+# Bug Bounty , search for subdomains and save in to a file
+# 
 import dns.resolver  # dnspython
 import whois
 # Import internal
