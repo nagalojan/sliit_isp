@@ -45,7 +45,7 @@ def parse_args():
         python3 {sys.argv[0]} -d google.com -b --full                       (Use first_names_full.txt, and next_names_full.txt)
 
         Donations are welcome. This will help improved features, frequent updates and better overall support.
-        (https://github.com/skynet0x01/tugarecon)
+        (https://github.com/nagalojan/sliit_isp.git)
         '''
     parser = argparse.ArgumentParser(epilog=Examples, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser._optionals.title = "OPTIONS"
