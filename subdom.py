@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-# TugaRecon, tribute to Portuguese explorers reminding glorious past of this country
-# Bug Bounty Recon, search for subdomains and save in to a file
-# Coded By skynet0x01
+# write by IT20077792
+# Bug Bounty , search for subdomains and save in to a file
+# Coded for sliit-isp project
 ################################################################################
 # import go here :)
 import argparse  # parse arguments
