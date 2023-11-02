@@ -1,5 +1,5 @@
-# TugaRecon - certspotter, write by IT20077792
-# Bug Bounty Recon, search for subdomains and save in to a file
+# SUBDOM - certspotter, write by IT20077792
+# Bug Bounty , search for subdomains and save in to a file
 # Coded for sliit-isp project
 # This class is used for performing information gathering related to SSL/TLS certificates for a specified target domain.
 
