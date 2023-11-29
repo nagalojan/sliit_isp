@@ -20,9 +20,9 @@ from utils.tuga_results import main_work_subdirs
 from tuga_bruteforce import TugaBruteForce
 
 # Import internal modules
-from modules.tuga_modules import tuga_certspotter, tuga_crt, tuga_hackertarget, tuga_threatcrowd, \
-                                 tuga_alienvault, tuga_threatminer, tuga_omnisint, tuga_sublist3r
-from modules.tuga_modules import queries
+from modules.tuga_modules import certspotter, crt, hackertarget, threatcrowd, \
+                                 alienvault, threatminer, omnisint, sublist3r
+from modules.modules import queries
 ################################################################################
 def data_results():
     main_work_subdirs()
@@ -72,7 +72,7 @@ def parse_url(url):
     except Exception as e:
         print('[*] Network unstable... !? ')
     except KeyboardInterrupt:
-        print("\nTugaRecon interrupted by user\n")
+        print("\nSUBDOM interrupted by user\n")
         print(G + "**************************************************************" + W)
         quit()
         #sys.exit(1)
@@ -90,7 +90,7 @@ def internet_on():
         exit(1)
     except KeyboardInterrupt:
         print(G + "**************************************************************" + W)
-        print("\nTugaRecon interrupted by user\n")
+        print("\nSUBDOM interrupted by user\n")
         sys.exit()
 ################################################################################
 def main(target, savemap, enum, threads, bruteforce, results, args):
@@ -108,23 +108,23 @@ def main(target, savemap, enum, threads, bruteforce, results, args):
     # Modules scan
     try:
         # <Module required> Perform enumerations and network mapping
-        supported_engines = {'certspotter': tuga_certspotter.Certspotter,
+        supported_engines = {'certspotter': certspotter.Certspotter,
                              'ssl': tuga_crt.CRT,
-                             'hackertarget': tuga_hackertarget.Hackertarget,
-                             'threatcrowd': tuga_threatcrowd.Threatcrowd,
-                             'alienvault': tuga_alienvault.Alienvault,
-                             'threatminer': tuga_threatminer.Threatminer,
-                             'omnisint': tuga_omnisint.Omnisint,
-                             'sublist3r': tuga_sublist3r.Sublist3r
+                             'hackertarget': hackertarget.Hackertarget,
+                             'threatcrowd': threatcrowd.Threatcrowd,
+                             'alienvault': alienvault.Alienvault,
+                             'threatminer': threatminer.Threatminer,
+                             'omnisint': omnisint.Omnisint,
+                             'sublist3r': sublist3r.Sublist3r
                             }
         chosenEnums = []
 
         if enum is None: # Run all modules
             start_time = time.time()
             queries(target)
-            chosenEnums = [tuga_certspotter.Certspotter, tuga_crt.CRT, tuga_hackertarget.Hackertarget,
-                           tuga_threatcrowd.Threatcrowd, tuga_alienvault.Alienvault, tuga_threatminer.Threatminer,
-                           tuga_omnisint.Omnisint, tuga_sublist3r.Sublist3r]
+            chosenEnums = [certspotter.Certspotter, crt.CRT, hackertarget.Hackertarget,
+                           threatcrowd.Threatcrowd, alienvault.Alienvault, threatminer.Threatminer,
+                           omnisint.Omnisint, sublist3r.Sublist3r]
             # Start super fast enumeration
             print("Wait for results...! (It might take a while)")
             print(G + "**************************************************************\n" + W)
@@ -152,7 +152,7 @@ def main(target, savemap, enum, threads, bruteforce, results, args):
             mapping_domain(target)
     except KeyboardInterrupt:
         print(G + "**************************************************************" + W)
-        print("\nTugaRecon interrupted by user\n")
+        print("\nSUBDOM interrupted by user\n")
         sys.exit()
 ################################################################################
 def menu():
