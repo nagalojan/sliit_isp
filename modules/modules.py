@@ -4,15 +4,15 @@
 # import modules
 import time
 # Import internal modules
-from modules import tuga_certspotter
-from modules import tuga_crt
-from modules import tuga_hackertarget
-from modules import tuga_threatcrowd
-from modules import tuga_alienvault
-from modules import tuga_threatminer
-from modules import tuga_omnisint
-from modules import tuga_sublist3r
-from utils.tuga_colors import G, Y, B, R, W
+from modules import certspotter
+from modules import crt
+from modules import hackertarget
+from modules import threatcrowd
+from modules import alienvault
+from modules import threatminer
+from modules import omnisint
+from modules import sublist3r
+from utils.colors import G, Y, B, R, W
 ################################################################################
 # Run all Modules...
 def queries(target):
