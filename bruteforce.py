@@ -12,9 +12,9 @@ import time  # Time access and conversions
 import dns.resolver  # dnspython
 import datetime
 # Import internal functions
-from utils.tuga_colors import G, Y, B, R, W
-from utils.tuga_dns import is_intranet
-from utils.tuga_terminal import getTerminalSize
+from utils.colors import G, Y, B, R, W
+from utils.dns import is_intranet
+from utils.terminal import getTerminalSize
 ################################################################################
 class TugaBruteForce:
     def __init__(self, options):
@@ -70,7 +70,7 @@ class TugaBruteForce:
             os.makedirs(folder)
         except:
             pass
-        outfile = 'results/' + self.target + "/" + date  + "/" + '_tuga_bruteforce.txt' if not options.full_scan else 'results/' + self.target + "/" + date + "/" + '_tuga_bruteforce_full.txt'
+        outfile = 'results/' + self.target + "/" + date  + "/" + '_subdom_bruteforce.txt' if not options.full_scan else 'results/' + self.target + "/" + date + "/" + '_tuga_bruteforce_full.txt'
         self.outfile = open(outfile, 'w')
 ################################################################################
         # save ip, dns.
