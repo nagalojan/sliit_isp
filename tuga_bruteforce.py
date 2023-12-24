@@ -12,9 +12,9 @@ import time  # Time access and conversions
 import dns.resolver  # dnspython
 import datetime
 # Import internal functions
-from utils.colors import G, Y, B, R, W
-from utils.dns import is_intranet
-from utils.terminal import getTerminalSize
+from tuga_utils.colors import G, Y, B, R, W
+from tuga_utils.dns import is_intranet
+from tuga_utils.terminal import getTerminalSize
 ################################################################################
 class TugaBruteForce:
     def __init__(self, options):
